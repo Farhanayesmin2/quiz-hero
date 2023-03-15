@@ -28,8 +28,8 @@ filter: Returns a new array with elements that pass a condition.It returns a new
                     </p>
                 </div>
             </details>
-            <details>
-                <summary class="py-2 outline-none cursor-pointer focus:underline">Difference between local storage,session storage and cookies.</summary>
+            <details class="outline outline-rose-900">
+                <summary class="py-2 outline-none cursor-pointer focus:underline text-bold text-red-700">Difference between local storage,session storage and cookies.</summary>
                 <div class="px-4 pb-4">
                     <p>Local storage: Local storage is useful for storing data that the user will need to access later, such as offline data.Data stored in local storage will persist even after the browser is closed, and can be accessed by any page on the same
                     domain.<br>
@@ -38,14 +38,22 @@ filter: Returns a new array with elements that pass a condition.It returns a new
                 Cookies are a good choice for storing data that should not be persisted for a long time, such as session IDs.They are commonly used for storing user preferences, login information, and other small amounts of data.</p>
                 </div>
             </details>
-            <details>
-                <summary class="py-2 outline-none cursor-pointer focus:underline">Magni reprehenderit possimus debitis?
+            <details class="outline outline-rose-900">
+                <summary class="py-2 outline-none cursor-pointer focus:underline text-bold text-red-700">What is event loop ?How does it work?
                 </summary>
                 <div class="px-4 pb-4 space-y-2">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptates aspernatur dolores in
-                        consequatur doloremque inventore reprehenderit, consequuntur perspiciatis architecto.</p>
-                    <p>Sed consectetur quod tenetur! Voluptatibus culpa incidunt veritatis velit quasi cupiditate unde
-                        eaque! Iure, voluptatibus autem eaque unde possimus quae.</p>
+                    <p>The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the Call Stack is empty, the
+                    Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it. Such
+                    an iteration is called a tick in the Event Loop.</p>
+                    <p>Call stack holds all the synchronous function calls. Call stack will execute code in a last in first out approach. So
+                    last the most inner nested code will be executed first and then one level above that and so on. If the function call is
+                    asynchronous it will add a new call entry on WebAPIs and the API will add a new call to the callback queue after the
+                    asynchronous action is done.<br>
+                When an event is triggered, it is added to a queue of events to be processed.
+                
+                The JavaScript engine checks to see if there is any code waiting to be executed in the call stack. If the call stack is
+                empty, the next event in the queue is processed.
+                </p>
                 </div>
             </details>
         </div>
