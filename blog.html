@@ -13,7 +13,7 @@
         <p class="p-2 text-sm font-medium tracking-wider text-center uppercase">How it works</p>
         <h2 class="mb-12 text-4xl font-bold leading-none text-center sm:text-5xl">Frequently Asked Questions</h2>
         <div class="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700 ">
-            <details open="" class="outline outline-rose-900">
+            <details open="" class="outline outline-rose-900 my-2">
                 <summary class="  py-2  cursor-pointer focus:underline text-bold text-red-700">What are the difference between map,filter,find and foreach?</summary>
                 <div class="px-4 pb-4">
                     <p>map: Transforms each element of an array to a new value.map() returns a new array with the transformed elements.It returns a new array with the same length as the original array, but with each element transformed by the function.
@@ -28,7 +28,7 @@ filter: Returns a new array with elements that pass a condition.It returns a new
                     </p>
                 </div>
             </details>
-            <details class="outline outline-rose-900">
+            <details class="outline outline-rose-400 my-2">
                 <summary class="py-2 outline-none cursor-pointer focus:underline text-bold text-red-700">Difference between local storage,session storage and cookies.</summary>
                 <div class="px-4 pb-4">
                     <p>Local storage: Local storage is useful for storing data that the user will need to access later, such as offline data.Data stored in local storage will persist even after the browser is closed, and can be accessed by any page on the same
@@ -38,7 +38,7 @@ filter: Returns a new array with elements that pass a condition.It returns a new
                 Cookies are a good choice for storing data that should not be persisted for a long time, such as session IDs.They are commonly used for storing user preferences, login information, and other small amounts of data.</p>
                 </div>
             </details>
-            <details class="outline outline-rose-900">
+            <details class="outline outline-rose-900 my-2">
                 <summary class="py-2 outline-none cursor-pointer focus:underline text-bold text-red-700">What is event loop ?How does it work?
                 </summary>
                 <div class="px-4 pb-4 space-y-2">
@@ -53,6 +53,23 @@ filter: Returns a new array with elements that pass a condition.It returns a new
                 
                 The JavaScript engine checks to see if there is any code waiting to be executed in the call stack. If the call stack is
                 empty, the next event in the queue is processed.
+                </p>
+                </div>
+            </details>
+            <details class="outline outline-rose-900 my-2">
+                <summary class="py-2 outline-none cursor-pointer focus:underline text-bold text-red-700">quizTimer functionality step by step?
+                </summary>
+                <div class="px-4 pb-4 space-y-2">
+                    <p>This quizTimer function, that takes a parameter which is  dismiss.
+                    If dismiss is false, then function sets an interval timer using setInterval().After that timer is set to run a function that
+                    updates a timer displayed on a webpage every second. 
+                    The timer gives in a minutes and seconds.
+                    The function calculates the number of minutes and seconds left by dividing the current count by 60 and using the
+                    remainder. It then formats the time as a string and displays it in an HTML element with the id of count.
+                    <br>
+                    The function also changes the text color of the timer to red every 60 seconds, alternating between two shades of red.
+                If dismiss is true, then the function clears an interval  timer using clearInterval(timer) and then returns it.
+                This is a way to stop the timer.
                 </p>
                 </div>
             </details>
