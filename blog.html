@@ -57,7 +57,7 @@ filter: Returns a new array with elements that pass a condition.It returns a new
                 </div>
             </details>
             <details class="outline outline-rose-900 my-2">
-                <summary class="py-2 outline-none cursor-pointer focus:underline text-bold text-red-700">quizTimer functionality step by step?
+                <summary class="py-2 outline-none cursor-pointer focus:underline text-bold text-red-700">Describe the quizTimer functionality step by step?
                 </summary>
                 <div class="px-4 pb-4 space-y-2">
                     <p>This quizTimer function, that takes a parameter which is  dismiss.
@@ -67,13 +67,31 @@ filter: Returns a new array with elements that pass a condition.It returns a new
                     The function calculates the number of minutes and seconds left by dividing the current count by 60 and using the
                     remainder. It then formats the time as a string and displays it in an HTML element with the id of count.
                     <br>
-                    The function also changes the text color of the timer to red every 60 seconds, alternating between two shades of red.
+                    The function also changes the text color of the timer to red every 60 seconds between two shades of red.
                 If dismiss is true, then the function clears an interval  timer using clearInterval(timer) and then returns it.
                 This is a way to stop the timer.
                 </p>
                 </div>
             </details>
-        </div>
+            <details class="outline outline-rose-900 my-2">
+                <summary class="py-2 outline-none cursor-pointer focus:underline text-bold text-red-700">Describe the chooseQuiz functionality step by step?
+                </summary>
+                <div class="px-4 pb-4 space-y-2">
+                    <p>This chooseQuiz function have two parameters one are index another one is givenAns.
+                        isExist give an array, there have a function that gives return an array answer.
+                        Index parameter checks if an object with the same id  then quiz already exists in the answers array. 
+                        If find() give the matching id and 
+                        If a matching object is found, then another parameter
+                 givenAns  splice() method to replace the  object with a new object
+                    from quizData[index] and the updated givenAns.
+                    <br>
+                If no matching object is found,then the function creates a new object from quizData[index].Then  givenAns parameter and pushes it to the
+                 answers array and the push().
+                The last function calls another function called displayAnswers().
+                </p>
+                </div>
+            </details>
+           
     </div>
 </section>
 </body>
